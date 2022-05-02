@@ -60,6 +60,7 @@
   .article {
     width: 20vw;
     height: 60vh;
+    max-height: 30rem;
     border: 1px solid black;
     box-shadow: 4px -4px 6px;
     background-color: gray;
