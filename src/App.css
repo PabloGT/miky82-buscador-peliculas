@@ -1,0 +1,124 @@
+
+.App {
+  text-align: center;
+  background-image: url("images/cinema.jpg");
+  padding: 100px;
+  color: rgb(5, 5, 5);
+  min-height: 100vh;
+  height: auto;
+}
+
+.title1 {
+  color: rgb(0, 0, 0);
+  font-size: 80px;
+  text-decoration: underline;
+}
+
+.link-enter {
+  color: rgb(255, 254, 254);
+  font-size: 30px;
+  background-color: rgb(71, 71, 71);
+  padding: 1rem;
+  border: 1px solid white;
+  margin: 2rem;
+  border-radius: 10px 10px 10px 10px;
+  
+}
+
+.formsearch{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+  .input{
+    border-radius: 10px 10px 10px 10px;
+    height: 2.8rem;
+    width: 30rem;
+    padding-left: 1rem;
+  }
+  .buttoninput{
+    border-radius: 10px 10px 10px 10px;
+    height: 3.1rem;
+    width: 10rem;
+    background-color: rgb(63, 60, 60);
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+
+  .clearbutton {
+    border-radius: 10px 10px 10px 10px;
+    height: 2.5rem;
+    width: 8rem;
+    background-color: rgb(63, 60, 60);
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .article {
+    width: 20vw;
+    height: 60vh;
+    border: 1px solid black;
+    box-shadow: 4px -4px 6px;
+    background-color: gray;
+    margin: 2rem;
+    padding: 1rem;
+    padding-top: 3rem;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .onearticle {
+    width: 60vw;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: 4px -4px 6px;
+    background-color: rgb(128, 128, 128);
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .mainlist{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 90vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .imagefilm{
+    background: none;
+    height: 15rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+
+  .favoriteslink{
+    margin-top: -1rem;
+    font-size: 1.5rem;
+    text-align: end;
+    color: rgb(116, 17, 17);
+  }
+
+  .link:visited{
+
+    color: rgb(116, 17, 17);
+  }
+
+  .addfavorites{
+    font-size: 1.2rem;
+    background-color: rgb(70, 66, 66);
+    padding: 0.4rem;
+    color: white;
+    border: 1px solid white;
+
+  }
+
