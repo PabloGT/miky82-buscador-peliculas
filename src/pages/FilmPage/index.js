@@ -12,9 +12,14 @@ function FilmPage ( ) {
   const [datalog, setDatalog] = useState(data)
 
 
-          const filmExists = datalog.find(
-          (datafilm) => Number(datafilm.id) === Number(results.id),  
-          )  
+  const filmPosition = datalog.findIndex(
+    (datafilm) => Number(datafilm.id) === Number(results.id),
+  )
+
+
+  const filmExists = datalog.find(
+    (datafilm) => Number(datafilm.id) === Number(results.id),  
+    ) 
 
 
   useEffect (() => {
@@ -43,7 +48,6 @@ function FilmPage ( ) {
 
   },[title])
 
-
     return (
       <div className="App">
         <article key={results.id} className="onearticle">
@@ -62,50 +66,28 @@ function FilmPage ( ) {
 
         { filmExists === undefined ?
                 <button className='addfavorites' onClick={() =>{
-                  
-                    const resultposition = datalog.indexOf(results);
-                    console.log('resultposition', resultposition)
-    
-                    if(resultposition === -1 ){
-                      console.log('datalog', datalog)
-                      console.log('results', results)
-                      const mas = datalog.push(`${results.title}`)
-                      console.log('mas', mas)
-                      setData(datalog) 
-                      // localStorage.setItem(key, JSON.stringify(data))
-                      
-                      console.log('La película ha sido añadida a favoritos')
 
-                    }else{
-
-                      console.log('la pelicula ya esta en favoritos')
-                    }
+                  let newfavorite = [...data, results]
+                  setData(newfavorite)
+                  setDatalog(data)
+                  window.location.reload()
 
             }
             }>Añadir a favoritos</button>
         :
               <button className='addfavorites' onClick={() =>{
 
-                  const filmPosition = datalog.findIndex(
-                    (datafilm) => Number(datafilm.id) === Number(filmExists.id),
-                  )
-                  console.log('filmPosition', filmPosition)
-                  
                   datalog.splice(filmPosition, 1)
-                  setData('favoritos', datalog)
-
-                  console.log('La película ha sido borrada de favoritos ')
+                  let newfavorite = [...datalog]
+                  setData(newfavorite)
+                  setDatalog(data)
+                  window.location.reload()
         
           }
           }>eliminar de favoritos</button>
 
         }
 
-
-
-
-        
-        
         </article>
         <Link to={"/main"} className="link-enter">!!! volver ¡¡¡</Link>
         
