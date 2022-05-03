@@ -1,0 +1,3 @@
+Hay una primera página donde se introduce el texto para buscar una película, y se muestran todos los resultados posibles. Al hacer click en el nombre de la peícula entras en su página principal, donde esta toda su información, e incluye un botón para añadir la pélicula a la lista de favoritos.
+En caso de que la peícula ya este en la lista de favoritos en vez de el botón de añadir apacere uno para borrarla.
+La lista de favoritos se guarda en el navegador.
